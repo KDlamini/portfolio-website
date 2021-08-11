@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Hello World
+# Personal Portfolio
 
-> In this project, I will set up a "Hello world" repository. My goal here is to master all of the tools and best practices I've learned about GitHub flow rules, .gitignore file, a linter for HTML and CSS, and documenting my work in a professional way.
+> In this project, I will create a personal portfolio. A portfolio website is a key job searching tool for a web developer. In this project, I will precisely replicate one of the *portfolio templates* from Microverse Figma. 
 
 ![screenshot](./app_screenshot.png)
 
