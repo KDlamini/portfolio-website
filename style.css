@@ -4,13 +4,22 @@ body {
   margin: 0;
   padding: 0;
   background: #fff;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
 }
 
-.navbar {
+.main {
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+}
+
+.toolbar {
+  position: fixed;
   margin: 0;
   height: 72px;
-  width: 100%;
-  padding: 0 36px 0 24px;
+  width: 95vw;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,4 +33,84 @@ body {
 .menu-icon {
   height: 16px;
   width: 17px;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner {
+  width: 63.888%;
+}
+
+.banner h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 60px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+}
+
+.banner p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+.banner a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0;
+  text-align: left;
+  text-decoration: none;
+}
+
+.social-media-icons {
+  width: 171px;
+  height: 20px;
+  margin: 14px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-icon {
+  color: #505F79;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* Tablets [601px -> 1200px] */
+}
+
+@media only screen and (max-width: 600px) {
+  /* Big smartphones [426px -> 600px] */
+  .banner {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0;
+  }
+
+  .banner p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  /* Small smartphones [325px -> 425px] */
+  .banner {
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0;
+  }
+
+  .banner p {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
