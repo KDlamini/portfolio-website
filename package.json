@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "A personal portfolio website that depicts all my web developments projects. It also provides more details about my background.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KDlamini/portfolio-website.git"
+  },
+  "author": "Simo Nkosi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KDlamini/portfolio-website/issues"
+  },
+  "homepage": "https://github.com/KDlamini/portfolio-website#readme"
+}
