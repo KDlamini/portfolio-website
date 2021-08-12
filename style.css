@@ -11,7 +11,6 @@ body {
 .header-bg {
   position: absolute;
   width: 97.5972222222%;
-  height: 100vh;
   left: 2.4027777778%;
   top: calc(20% - 268px / 2);
 }
@@ -19,9 +18,13 @@ body {
 .header-background-shape {
   position: absolute;
   width: 100%;
-  height: 916px;
   left: 0;
   top: 1px;
+}
+
+.header-background-mobile,
+.header-bg-mobile {
+  display: none;
 }
 
 .toolbar {
@@ -113,10 +116,9 @@ body {
 
 .banner-text p {
   position: static;
-  width: 920px;
+  width: 100%;
   height: 98px;
   left: 0;
-  top: 134px;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
@@ -138,10 +140,9 @@ body {
 
 .banner-text h1 {
   position: static;
-  width: 920px;
+  width: 100%;
   height: 122px;
   left: 0;
-  top: 0;
   font-weight: bold;
   color: #091e42;
   font-size: 48px;
@@ -155,7 +156,7 @@ body {
   letter-spacing: 0.37px;
 }
 
-.banner-text a {
+.social-title {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -163,12 +164,15 @@ body {
   flex: none;
   order: 2;
   flex-grow: 0;
-  margin: 12px 0;
+  margin: 8px 0;
   position: static;
-  width: auto;
   height: 24px;
   left: 0;
-  top: 244px;
+  top: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
   text-decoration: none;
 }
 
@@ -191,9 +195,13 @@ body {
 }
 
 .banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
   position: absolute;
-  width: 100%;
-  height: 846px;
+  width: 90%;
+  height: 520px;
   left: 0;
   top: 71px;
 }
@@ -220,7 +228,7 @@ body {
   flex-grow: 0;
   width: 171px;
   height: 20px;
-  margin: 14px 0;
+  margin: 8px 0;
   padding-left: 0;
 }
 
@@ -234,10 +242,26 @@ body {
 
 @media only screen and (max-width: 600px) {
   /* Big smartphones [426px -> 600px] */
-  .header {
-    background: url('./images/header-shapes-mobile.png');
-    background-size: contain;
-    background-repeat: no-repeat;
+  .header-bg {
+    display: none;
+  }
+
+  .header-background-shape {
+    display: none;
+  }
+
+  .header-background-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .header-bg-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
 
   .logo-wrapper {
@@ -263,15 +287,47 @@ body {
     padding: 8px;
   }
 
+  .banner {
+    width: 90%;
+  }
+
   .banner-text {
+    height: 604px;
+    width: 85%;
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 0;
+    top: calc(20% - 134px / 2);
+    left: 24px;
+  }
+
+  .banner-text h1 {
+    height: auto;
+    left: 24px;
+    top: 114px;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .banner-text p {
+    width: 100%;
+    height: auto;
+    left: 24px;
+    top: 276px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .social-title {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .social-media-icons,
+  .social-title,
+  .banner h1,
+  .banner p {
+    margin: 8px 0;
   }
 }
 
