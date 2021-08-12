@@ -6,45 +6,59 @@ body {
   background: #e5e5e5;
   font-family: Poppins, sans-serif;
   font-style: normal;
-}
-
-.header-bg {
-  position: absolute;
-  width: 97.5972222222%;
-  left: 2.4027777778%;
-  top: calc(20% - 268px / 2);
-}
-
-.header-background-shape {
-  position: absolute;
-  width: 100%;
-  left: 0;
-  top: 1px;
-}
-
-.header-background-mobile,
-.header-bg-mobile {
-  display: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .toolbar {
-  position: absolute;
-  background: #fff;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 6rem;
   height: 72px;
   left: 0;
   top: 0;
+  background: #fff;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  padding: 0 24px;
+  position: relative;
+  height: 560px;
+  background-image: url(./images/Header-bg.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  padding: 0;
+  margin: 0 7rem;
+}
+
+.content-body {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  background-image: url(./images/header-background-shape-desktop.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
 }
 
 .logo-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
   width: 100px;
   height: 40px;
-  left: 9.9305555556%;
-  top: 10px;
   padding: 10px 12px;
   text-decoration: none;
 }
@@ -55,10 +69,6 @@ body {
   text-align: center;
   font-weight: bold;
   color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
-  margin: 0 0;
   height: 20px;
   width: 76px;
   font-size: 18px;
@@ -71,11 +81,9 @@ body {
   align-items: center;
   justify-content: space-between;
   list-style: none;
-  position: absolute;
   width: 259px;
   height: 40px;
   padding: 0;
-  left: 72.1527777778%;
 }
 
 .menu-item {
@@ -84,7 +92,6 @@ body {
   align-items: center;
   position: static;
   height: 40px;
-  top: 0;
   padding: 10px 12px;
 }
 
@@ -118,14 +125,10 @@ body {
   position: static;
   width: 100%;
   height: 98px;
-  left: 0;
   font-weight: normal;
   font-size: 20px;
   line-height: 28px;
   color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   margin: 12px 0;
 }
 
@@ -142,16 +145,10 @@ body {
   position: static;
   width: 100%;
   height: 122px;
-  left: 0;
   font-weight: bold;
   color: #091e42;
   font-size: 48px;
   line-height: 60px;
-  display: flex;
-  align-items: center;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 12px 0;
   letter-spacing: 0.37px;
 }
@@ -182,9 +179,6 @@ body {
 
 .menu-icon {
   position: static;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
   margin: 0 0;
   height: 16px;
   width: 17px;
@@ -194,39 +188,12 @@ body {
   bottom: 20%;
 }
 
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
-  padding: 114px 24px;
-  position: absolute;
-  width: 96%;
-  height: 520px;
-  left: 0;
-  top: 71px;
-}
-
-.banner-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  flex: 1;
-  position: absolute;
-  height: 268px;
-  padding: 0;
-  margin: 0 9%;
-  top: calc(40% - 268px / 2);
-}
-
 .social-media-icons {
   display: flex;
   justify-content: space-between;
   position: static;
   list-style: none;
-  flex: none;
   order: 3;
-  flex-grow: 0;
   width: 171px;
   height: 20px;
   margin: 8px 0;
@@ -243,30 +210,8 @@ body {
 
 @media only screen and (max-width: 600px) {
   /* Big smartphones [426px -> 600px] */
-  .header-bg {
-    display: none;
-  }
-
-  .header-background-shape {
-    display: none;
-  }
-
-  .header-background-mobile {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .header-bg-mobile {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-  }
-
-  .logo-wrapper {
-    left: 12px;
+  .toolbar {
+    padding: 0 1rem;
   }
 
   .menu-items {
@@ -276,12 +221,10 @@ body {
   .menu-btn.active {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    position: absolute;
+    align-items: center;
+    justify-content: center;
     height: 40px;
     width: 40px;
-    right: 12px;
-    top: calc(50% - 40px / 2);
     border: none;
     background-color: transparent;
     border-radius: 8px;
@@ -289,33 +232,27 @@ body {
   }
 
   .banner {
-    width: 90%;
+    height: 90vh;
+    background-image: url(./images/header-shapes-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .banner-text {
-    height: 604px;
-    width: 85%;
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 0;
-    margin: 0 1%;
-    top: calc(20% - 134px / 2);
-    left: 24px;
+    margin: 0 1rem;
   }
 
   .banner-text h1 {
     height: auto;
-    left: 24px;
-    top: 114px;
     font-size: 40px;
     line-height: 52px;
   }
 
   .banner-text p {
-    width: 100%;
     height: auto;
-    left: 24px;
-    top: 276px;
     font-size: 16px;
     line-height: 24px;
   }

@@ -7,7 +7,9 @@
 ![screenshot](./images/Banner.png)
 ![screenshot](./images/Contact.png)
 
-Additional description about the project and its features.
+This project is part of the Microverse curriculum. The main objective is to understand how to parse a Figma design and follow professional guidlines in responsive design.
+
+
 
 ## Built With
 
@@ -18,6 +20,17 @@ Additional description about the project and its features.
 - Figma
 - stylelint
 
+## Getting Started
+
+To get a local copy of this project:
+
+Clone this repository or download the Zip folder:
+```
+git clone git@github.com:KDlamini/portfolio-website.git
+```
+## Live Demo
+
+[Preview](https://kdlamini.github.io/portfolio-website/)
 
 ## Authors
 
