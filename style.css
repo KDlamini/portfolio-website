@@ -197,10 +197,11 @@ body {
 .banner {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  flex: 1;
   padding: 114px 24px;
   position: absolute;
-  width: 90%;
+  width: 96%;
   height: 520px;
   left: 0;
   top: 71px;
@@ -210,11 +211,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  flex: 1;
   position: absolute;
-  width: 63.8888888889%;
   height: 268px;
   padding: 0;
-  left: 18.0555555556%;
+  margin: 0 9%;
   top: calc(40% - 268px / 2);
 }
 
@@ -279,7 +280,7 @@ body {
     position: absolute;
     height: 40px;
     width: 40px;
-    right: 24px;
+    right: 12px;
     top: calc(50% - 40px / 2);
     border: none;
     background-color: transparent;
@@ -297,6 +298,7 @@ body {
     font-size: 40px;
     line-height: 52px;
     letter-spacing: 0;
+    margin: 0 1%;
     top: calc(20% - 134px / 2);
     left: 24px;
   }
