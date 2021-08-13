@@ -371,6 +371,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   align-self: stretch;
   padding: 114px 24px;
   width: 375px;
@@ -384,7 +385,7 @@ button:disabled {
   align-items: flex-start;
   padding: 0;
   width: 327px;
-  height: 409px;
+  height: 509px;
 }
 
 .top-container h2 {
@@ -425,6 +426,98 @@ button:disabled {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: #396df2;
+}
+
+/* Skills */
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  width: 327px;
+  height: 464.15px;
+  list-style: none;
+}
+
+.skill-item {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.languages {
+  height: 320.15px;
+}
+
+.skill-list-tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 72px;
+  padding: 0 12px;
+}
+
+.skill-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  margin: 0;
+  line-height: 24px;
+  color: #000;
+  text-align: left;
+}
+
+.skill-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: none;
+  background: none;
+}
+
+.chevron.icon {
+  font-size: 20px;
+  margin: 0;
+  color: #7f848a;
+}
+
+.skill-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  justify-content: space-between;
+  padding: 12px;
+  height: 243px;
+  margin: 0;
+  list-style: none;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  margin: 0;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+}
+
+.language-icon {
+  width: 48px;
+  height: 48px;
+  border: 1px solid #fff;
+  margin: 0 12px;
+}
+
+.language-text {
+  color: #253858;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
 }
 
 @media only screen and (max-width: 600px) {
