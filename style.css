@@ -95,20 +95,6 @@ body {
   padding: 10px 12px;
 }
 
-.menu-item p {
-  position: static;
-  height: 20px;
-  left: 12px;
-  top: 10px;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #344563;
-}
-
 .menu-item.portfolio {
   width: 63px;
 }
@@ -130,6 +116,32 @@ body {
   line-height: 28px;
   color: #344563;
   margin: 12px 0;
+}
+
+.top-container p {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 327px;
+  height: 144px;
+  color: #344563;
+}
+
+.menu-item p {
+  position: static;
+  height: 20px;
+  left: 12px;
+  top: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #344563;
 }
 
 .menu-item.portfolio p,
@@ -158,7 +170,6 @@ body {
   font-weight: 500;
   height: 24px;
   margin: 0;
-  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
@@ -355,7 +366,7 @@ button:disabled {
   letter-spacing: 0.03em;
 }
 
-/* About Section*/
+/* About Section */
 .about-section {
   display: flex;
   flex-direction: column;
@@ -371,7 +382,7 @@ button:disabled {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 409px;
 }
@@ -386,18 +397,6 @@ button:disabled {
   font-size: 40px;
   line-height: 52px;
   color: #172b4d;
-}
-
-.top-container p {
-  display: flex;
-  align-items: center;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  width: 327px;
-  height: 144px;
-  color: #344563;
 }
 
 .social-media-container {
@@ -417,7 +416,7 @@ button:disabled {
   width: 162px;
   height: 48px;
   margin-top: 22px;
-  border: 1px solid #6070FF;
+  border: 1px solid #6070ff;
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
@@ -425,7 +424,7 @@ button:disabled {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #396DF2;
+  color: #396df2;
 }
 
 @media only screen and (max-width: 600px) {
