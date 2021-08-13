@@ -29,7 +29,7 @@ body {
   align-self: stretch;
   padding: 0 24px;
   position: relative;
-  height: 560px;
+  height: 83vh;
   background-image: url(./images/Header-bg.svg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,18 +206,18 @@ body {
 
 /* Works Section */
 .works {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
   align-self: stretch;
   padding: 114px 24px;
+  background: #fff;
 }
 
-.projects {
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: static;
   box-sizing: border-box;
   width: 327px;
   height: 552px;
@@ -225,10 +225,10 @@ body {
   list-style: none;
   background: #fff;
   border: 1px solid #dfe1e6;
+  border-radius: 16px;
 }
 
 .Project-img {
-  position: static;
   width: 295px;
   height: 220px;
   border-radius: 8px;
@@ -238,28 +238,23 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  position: static;
   width: 295px;
   height: 288px;
   padding: 0;
-  margin-top: 12px;
 }
 
 .project-header {
-  position: static;
   width: 100%;
   height: 80px;
   padding: 0;
 }
 
 .project-title {
-  position: static;
   width: 100%;
-  height: 36px;
   font-size: 32px;
   font-style: normal;
   font-weight: 700;
-  line-height: 44px;
+  margin: 0;
   letter-spacing: 0;
   text-align: left;
   color: #172b4d;
@@ -270,11 +265,10 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: static;
   width: 236px;
   height: 32px;
   padding: 0;
-  margin-top: 12px;
+  margin: 0;
   color: #7a869a;
   font-style: normal;
   font-weight: 600;
@@ -287,14 +281,12 @@ body {
 }
 
 .project-info img {
-  position: static;
   width: 8px;
   height: 8px;
   background: #c1c7d0;
 }
 
 .project-description {
-  position: static;
   width: 100%;
   height: 76px;
   margin: 12px 0;
@@ -307,21 +299,22 @@ body {
 
 .tags {
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  position: static;
   padding: 0;
   width: 203px;
   height: 24px;
+  list-style: none;
 }
 
 .tag-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.03em;
+  margin: 0;
   padding: 4px 12px;
+  color: #6070ff;
   background: #ebebff;
   border-radius: 8px;
 }
@@ -330,7 +323,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  position: static;
   width: 100%;
   height: 72px;
   margin-top: 12px;
@@ -358,6 +350,10 @@ body {
 
 @media only screen and (max-width: 600px) {
   /* Big smartphones [426px -> 600px] */
+  .content-body {
+    background: none;
+  }
+
   .toolbar {
     padding: 0 1rem;
   }
@@ -380,7 +376,8 @@ body {
   }
 
   .banner {
-    height: 90vh;
+    height: 95vh;
+    background: #fff;
     background-image: url(./images/header-shapes-mobile.svg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -415,5 +412,9 @@ body {
   .banner h1,
   .banner p {
     margin: 8px 0;
+  }
+
+  .works {
+    grid-template-columns: auto;
   }
 }
