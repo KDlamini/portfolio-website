@@ -4,14 +4,29 @@
 
 > In this project, I will create a personal portfolio. A portfolio website is a key job searching tool for a web developer. In this project, I will precisely replicate one of the *portfolio templates* from Microverse Figma. 
 
-![screenshot](./images/app_screenshot.png)
+![screenshot](./images/Banner.png)
 
-Additional description about the project and its features.
+This project is part of the Microverse curriculum. The main objective is to understand how to parse a Figma design and follow professional guidlines in responsive design.
+
+
 
 ## Built With
 
 - Html/Css
 
+## Additional Tools
+
+- Figma
+- stylelint
+
+## Getting Started
+
+To get a local copy of this project:
+
+Clone this repository or download the Zip folder:
+```
+git clone git@github.com:KDlamini/portfolio-website.git
+```
 
 ## Authors
 
@@ -24,7 +39,8 @@ Additional description about the project and its features.
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome!  
+Feel free to check the [issues page](https://github.com/KDlamini/portfolio-website/issues).
 
 
 ## Show your support
@@ -33,7 +49,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- This project is part of day 2 of module 1 in the Microverse study program.
+- This project is part of day 4 of module 1 in the Microverse study program.
 
 ## 📝 License
 
