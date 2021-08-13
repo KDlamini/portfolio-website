@@ -154,18 +154,10 @@ body {
 }
 
 .social-title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  flex: none;
-  order: 2;
-  flex-grow: 0;
-  margin: 8px 0;
-  position: static;
+  font-style: normal;
+  font-weight: 500;
   height: 24px;
-  left: 0;
-  top: 0;
+  margin: 0;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -196,12 +188,27 @@ body {
   order: 3;
   width: 171px;
   height: 20px;
-  margin: 8px 0;
+  margin: 0;
   padding-left: 0;
 }
 
 .social-icon {
   color: #505f79;
+}
+
+button:hover {
+  color: #fff;
+  background: #6070ff;
+}
+
+button:active {
+  color: #fff;
+  background: #2230d2;
+}
+
+button:disabled {
+  color: #5e6c84;
+  background: #e5e5e5;
 }
 
 /* Works Section */
@@ -346,6 +353,79 @@ body {
   font-size: 17px;
   line-height: 24px;
   letter-spacing: 0.03em;
+}
+
+/* About Section*/
+.about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: stretch;
+  padding: 114px 24px;
+  width: 375px;
+  height: 1125.15px;
+  background: #fff;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  width: 327px;
+  height: 409px;
+}
+
+.top-container h2 {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 101px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.top-container p {
+  display: flex;
+  align-items: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  width: 327px;
+  height: 144px;
+  color: #344563;
+}
+
+.social-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  width: 200px;
+  height: 80px;
+}
+
+.about-btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px;
+  width: 162px;
+  height: 48px;
+  margin-top: 22px;
+  border: 1px solid #6070FF;
+  box-sizing: border-box;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #396DF2;
 }
 
 @media only screen and (max-width: 600px) {
