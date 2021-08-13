@@ -7,6 +7,7 @@
 ![screenshot](./images/Banner.png)
 ![screenshot](./images/Screenshot-projects1.png)
 ![screenshot](./images/Screenshot-projects2.png)
+![screenshot](./images/Screenshot-About.png) ![screenshot](./images/Screenshot-Skills.png)
 
 This project is part of the Microverse curriculum. The main objective is to understand how to parse a Figma design and follow professional guidlines in responsive design.
 
