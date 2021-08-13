@@ -283,7 +283,7 @@ button:disabled {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 236px;
+  width: 267px;
   height: 32px;
   padding: 0;
   margin: 0;
@@ -296,12 +296,18 @@ button:disabled {
 
 .project-info-title {
   color: #344563;
+  margin: 0;
+}
+
+.project-info-item {
+  margin: 0;
 }
 
 .project-info img {
   width: 8px;
   height: 8px;
-  background: #c1c7d0;
+  margin: 0;
+  color: #c1c7d0;
 }
 
 .project-description {
