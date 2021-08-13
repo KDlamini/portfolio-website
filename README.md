@@ -5,6 +5,8 @@
 > In this project, I will create a personal portfolio. A portfolio website is a key job searching tool for a web developer. In this project, I will precisely replicate one of the *portfolio templates* from Microverse Figma. 
 
 ![screenshot](./images/Banner.png)
+![screenshot](./images/Screenshot-projects1.png)
+![screenshot](./images/Screenshot-projects2.png)
 
 This project is part of the Microverse curriculum. The main objective is to understand how to parse a Figma design and follow professional guidlines in responsive design.
 
