@@ -550,7 +550,7 @@ button:disabled {
   height: 779px;
   padding: 50px 24px;
   background-image: url(./images/contact-form-shapes-mobile.svg), url(./images/Contact-me.svg);
-  background-position: top right;
+  background-position: right center;
   background-repeat: no-repeat;
 }
 
