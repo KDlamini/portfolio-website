@@ -7,7 +7,8 @@
 ![screenshot](./images/Banner.png)
 ![screenshot](./images/Screenshot-projects1.png)
 ![screenshot](./images/Screenshot-projects2.png)
-![screenshot](./images/Screenshot-About.png) ![screenshot](./images/Screenshot-Skills.png)
+![screenshot](./images/Screenshot-About.png) 
+![screenshot](./images/Screenshot-contact.png)
 
 This project is part of the Microverse curriculum. The main objective is to understand how to parse a Figma design and follow professional guidlines in responsive design.
 
@@ -29,6 +30,22 @@ To get a local copy of this project:
 Clone this repository or download the Zip folder:
 ```
 git clone git@github.com:KDlamini/portfolio-website.git
+```  
+
+## Test
+To track linter errors locally follow these steps:  
+
+Download all the dependencies run:
+```
+npm install
+```
+Track HTML linter errors run:
+```
+npx hint .
+```
+Track CSS linter errors run:
+```
+npx stylelint "**/*.{css,scss}"
 ```
 
 ## Authors
@@ -53,6 +70,9 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - This project is part of day 4 of module 1 in the Microverse study program.
+- Thanks to the Microverse team for the great curriculum.
+- Thanks to Code Reviewers for the insightful feedback.
+- A great thanks to My coding partners, morning session team, and standup team Partners for their contributions.
 
 ## 📝 License
 
