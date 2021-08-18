@@ -30,7 +30,7 @@ body {
   align-self: stretch;
   padding: 0 24px;
   position: relative;
-  height: 83vh;
+  height: 93vh;
   background-image: url(./images/Header-bg.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -549,11 +549,11 @@ button:disabled {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 375px;
-  height: 779px;
+  width: 100%;
+  height: 846px;
   padding: 50px 24px;
-  background-image: url(./images/contact-form-shapes-mobile.svg), url(./images/Contact-me.svg);
-  background-position: right center;
+  background-image: url(./images/contact-form-background-shapes.svg), url(./images/contact-form-background-shape-desktop.svg);
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -566,7 +566,7 @@ button:disabled {
 .form-group-actions {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   height: 400px;
 }
@@ -585,6 +585,7 @@ button:disabled {
 
 .form-description {
   height: auto;
+  width: 801px;
   font-size: 20px;
   line-height: 28px;
   text-align: center;
@@ -593,19 +594,19 @@ button:disabled {
 
 .form-group-actions input {
   align-self: stretch;
-  width: 327px;
+  width: 447px;
   height: 48px;
   padding-left: 16px;
   color: #172b4d;
   font-size: 17px;
   line-height: 20px;
   border: 1px solid #cfd8dc;
-  border-radius: 8px;
+  border-radius: 2px;
   outline: none;
 }
 
 .textarea-container {
-  width: 327px;
+  width: 447px;
   height: 170px;
   padding: 15px 16px;
   background: #fff;
@@ -614,7 +615,7 @@ button:disabled {
 }
 
 .textarea-container textarea {
-  width: 273px;
+  width: 100%;
   height: 140px;
   font-size: 15px;
   line-height: 24px;
@@ -800,5 +801,25 @@ button:disabled {
     justify-content: flex-start;
     width: 100%;
     height: 66.72px;
+  }
+
+  .contact-form {
+    width: 375px;
+    height: 779px;
+    background-image: url(./images/contact-form-shapes-mobile.svg), url(./images/Contact-me.svg);
+    background-position: right center;
+  }
+
+  .form-description {
+    width: 100%;
+  }
+
+  .form-group-actions input {
+    width: 327px;
+    border-radius: 8px;
+  }
+
+  .textarea-container {
+    width: 327px;
   }
 }
