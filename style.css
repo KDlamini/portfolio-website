@@ -36,9 +36,9 @@ body {
 }
 
 .banner h1,
-  .banner p {
-    margin: 8px 0;
-  }
+.banner p {
+  margin: 8px 0;
+}
 
 .banner-text {
   display: flex;
@@ -639,17 +639,27 @@ button:disabled {
     height: 40px;
     padding: 10px 12px;
   }
-  
+
   .menu-item.portfolio {
     width: 63px;
   }
-  
+
   .menu-item.about {
     width: 46px;
   }
-  
+
   .menu-item.contact {
     width: 62px;
+  }
+
+  .banner-text p {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .top-container p {
+    width: 327px;
+    height: 144px;
   }
 
   .menu-item p {
@@ -665,7 +675,7 @@ button:disabled {
     text-align: center;
     color: #344563;
   }
-  
+
   .menu-item.portfolio p,
   .menu-item.about p,
   .menu-item.contact p {
@@ -693,11 +703,6 @@ button:disabled {
     line-height: 60px;
   }
 
-  .banner-text p {
-    font-size: 20px;
-    line-height: 28px;
-  }
-
   .project-card {
     flex-direction: row;
     padding: 24px;
@@ -709,7 +714,6 @@ button:disabled {
   .project-img-wrapper {
     width: 48%;
     height: 100%;
-    
   }
 
   .project-content-block {
@@ -762,11 +766,6 @@ button:disabled {
   .top-container {
     width: 41%;
     height: 392px;
-  }
-
-  .top-container p {
-    width: 327px;
-    height: 144px;
   }
 
   .skills-container {
