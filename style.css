@@ -70,7 +70,7 @@ body {
   animation: rotate-center 0.6s ease-in-out both;
 }
 
-@keyframes  rotate-center {
+@keyframes rotate-center {
   0% {
     opacity: 0;
     transform: rotate(0);
@@ -233,7 +233,6 @@ button:disabled {
 .project-img-wrapper {
   width: 295px;
   height: 220px;
-
 }
 
 .project-img-wrapper:hover {
@@ -245,8 +244,8 @@ button:disabled {
   0% {
     transform: scale(0.9);
   }
-  100% {
 
+  100% {
     transform: scale(1);
   }
 }
@@ -677,6 +676,7 @@ button:disabled {
     0% {
       transform: scale(0.5);
     }
+
     100% {
       background: #ebebff;
       border-radius: 2px;
