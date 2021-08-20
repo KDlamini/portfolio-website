@@ -67,6 +67,19 @@ body {
   height: 40px;
   padding: 10px 12px;
   text-decoration: none;
+  animation: rotate-center 0.6s ease-in-out both;
+}
+
+@keyframes  rotate-center {
+  0% {
+    opacity: 0;
+    transform: rotate(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
 }
 
 .logo-wrapper p {
@@ -220,6 +233,22 @@ button:disabled {
 .project-img-wrapper {
   width: 295px;
   height: 220px;
+
+}
+
+.project-img-wrapper:hover {
+  animation: scale-up2 0.8s ease both;
+  cursor: pointer;
+}
+
+@keyframes scale-up2 {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+
+    transform: scale(1);
+  }
 }
 
 .Project-img {
@@ -624,7 +653,6 @@ button:disabled {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
     list-style: none;
     width: 259px;
     height: 40px;
@@ -632,24 +660,28 @@ button:disabled {
   }
 
   .menu-item {
+    flex: 1;
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: static;
+    justify-content: center;
     height: 40px;
-    padding: 10px 12px;
   }
 
-  .menu-item.portfolio {
-    width: 63px;
+  .menu-item:hover {
+    animation: scale-up 0.8s ease both;
+    cursor: pointer;
   }
 
-  .menu-item.about {
-    width: 46px;
-  }
-
-  .menu-item.contact {
-    width: 62px;
+  @keyframes scale-up {
+    0% {
+      transform: scale(0.5);
+    }
+    100% {
+      background: #ebebff;
+      border-radius: 2px;
+      transform: scale(1);
+    }
   }
 
   .banner-text p {
