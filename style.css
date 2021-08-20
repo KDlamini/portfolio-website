@@ -235,7 +235,8 @@ button:disabled {
   height: 220px;
 }
 
-.project-img-wrapper:hover {
+.project-img-wrapper:hover,
+button:hover {
   animation: scale-up2 0.8s ease both;
   cursor: pointer;
 }
