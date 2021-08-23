@@ -12,7 +12,8 @@
 
 This project is part of the Microverse curriculum. The main objective is to understand how to parse a Figma design and follow professional guidlines in responsive design.
 
-
+## Live Preview
+[https://kdlamini.github.io/portfolio-website/](https://kdlamini.github.io/portfolio-website/)
 
 ## Built With
 
