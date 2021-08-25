@@ -71,7 +71,8 @@ body {
 }
 
 .logo-wrapper:focus,
-.social-title:focus {
+.social-title:focus,
+button:focus {
   outline: 2px solid #111111;
 }
 
@@ -201,7 +202,8 @@ body {
 
 button:hover {
   color: #fff;
-  background: #6070ff;
+  background: #172d63;
+  border-color: #172d63;
 }
 
 button:active {
@@ -382,7 +384,7 @@ button:hover {
   width: 124px;
   height: 48px;
   padding: 12px;
-  color: #396df2;
+  color: #172d63;
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
