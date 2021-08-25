@@ -71,8 +71,7 @@ body {
 }
 
 .logo-wrapper:focus {
-  border: 1px solid #111111;
-  border-radius: 2px;
+  outline: 2px solid #111111;
 }
 
 @keyframes rotate-center {
