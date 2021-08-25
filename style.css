@@ -71,7 +71,8 @@ body {
 }
 
 .logo-wrapper:focus {
-  outline: #ebebff;
+  border: 1px solid #111111;
+  border-radius: 2px;
 }
 
 @keyframes rotate-center {
@@ -96,6 +97,10 @@ body {
   width: 76px;
   font-size: 18px;
   line-height: 20px;
+}
+
+.logo-wrapper p:hover {
+  color: #4451cc;
 }
 
 .menu-items {
