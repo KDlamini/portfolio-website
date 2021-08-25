@@ -209,6 +209,7 @@ button:hover {
 button:active {
   color: #fff;
   background: #2230d2;
+  outline: none;
 }
 
 button:disabled {
