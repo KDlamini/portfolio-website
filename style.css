@@ -209,7 +209,11 @@ button:active {
 .logo-wrapper:focus,
 .social-title:focus,
 button:focus {
-  outline: 2px solid #111;
+  outline: none;
+  box-sizing: border-box;
+  border: 1px solid #111;
+  border-radius: 3px;
+  box-shadow: 0 0 0 1px rgb(66, 66, 66) inset;
 }
 
 button:disabled {
