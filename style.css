@@ -744,6 +744,10 @@ button:hover {
     border-radius: 24px;
   }
 
+  .project-card:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
   .project-img-wrapper {
     width: 48%;
     height: 100%;
