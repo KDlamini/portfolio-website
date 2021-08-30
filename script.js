@@ -6,7 +6,7 @@ const menuIcon = document.querySelector('.menu-icon');
 menuButton.addEventListener('click', () => {
   menuList.classList.toggle('active');
   menuButton.classList.toggle('active');
-  menuIcon.src = './image/close-btn.svg';
+  menuIcon.src = './images/Enable.svg';
 });
 
 menuItems.forEach((item) => {

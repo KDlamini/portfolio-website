@@ -139,7 +139,7 @@ body {
 
 .menu-btn.active {
   z-index: 2;
-  background: #6070ff;
+  background-color: #6070ff;
 }
 
 .menu-item a {
