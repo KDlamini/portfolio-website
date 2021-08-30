@@ -10,13 +10,13 @@ body {
   flex-direction: column;
 }
 
-.toolbar {
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   position: relative;
   padding: 1rem 2.5rem;
-  height: 72px;
+  height: auto;
   margin: 0;
   background: #fff;
 }
@@ -96,6 +96,32 @@ body {
 
 .menu-items {
   display: none;
+  list-style: none;
+}
+
+.menu-items.active {
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin: 0;
+  padding: 80px 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: #6070FF;
+  mix-blend-mode: multiply;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 0;
 }
 
 .menu-btn {
@@ -109,6 +135,29 @@ body {
   background-color: transparent;
   border-radius: 8px;
   padding: 8px;
+}
+
+.menu-btn.active {
+  z-index: 2;
+  background: #6070FF;
+}
+
+.menu-item a {
+  height: 20px;
+  left: 12px;
+  top: 10px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0 10px;
 }
 
 .banner-text p {
@@ -193,6 +242,10 @@ body {
 button:hover {
   color: #fff;
   background: #6070ff;
+}
+
+.menu-btn:hover {
+  background: #ebebff;
 }
 
 button:active {
@@ -641,8 +694,9 @@ button:hover {
     background-position: top left;
   }
 
-  .toolbar {
+  .menu {
     padding: 0 6rem;
+    height: 72px;
   }
 
   .menu-btn {
@@ -653,7 +707,6 @@ button:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    list-style: none;
     width: 259px;
     height: 40px;
     padding: 0;
@@ -661,11 +714,18 @@ button:hover {
 
   .menu-item {
     flex: 1;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
     height: 40px;
+    margin: 0;
+  }
+
+  .menu-item a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #344563;
+  }
+
+  .close-button {
+    display: none;
   }
 
   .menu-item:hover {
@@ -693,29 +753,6 @@ button:hover {
   .top-container p {
     width: 327px;
     height: 144px;
-  }
-
-  .menu-item p {
-    position: static;
-    height: 20px;
-    left: 12px;
-    top: 10px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 20px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #344563;
-  }
-
-  .menu-item.portfolio p,
-  .menu-item.about p,
-  .menu-item.contact p {
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0 10px;
   }
 
   .banner {
