@@ -140,6 +140,7 @@ body {
 
 .menu-btn.active {
   z-index: 2;
+  background: #4b5dff;
 }
 
 .menu-item a {
@@ -706,14 +707,6 @@ button:hover {
     width: 259px;
     height: 40px;
     padding: 0;
-  }
-
-  .menu-items.active {
-    display: none;
-  }
-
-  .content-body {
-    filter: none;
   }
 
   .menu-item {
