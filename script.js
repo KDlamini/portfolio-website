@@ -6,7 +6,12 @@ const menuIcon = document.querySelector('.menu-icon');
 menuButton.addEventListener('click', () => {
   menuList.classList.toggle('active');
   menuButton.classList.toggle('active');
-  menuIcon.src = './images/Enable.svg';
+
+  if (menuButton.classList.contains('active')) {
+    menuIcon.src = './images/Enable.svg';
+  } else {
+    location.reload();
+  }
 });
 
 menuItems.forEach((item) => {
@@ -15,3 +20,4 @@ menuItems.forEach((item) => {
     menuIcon.src = './images/Union.png';
   });
 });
+
