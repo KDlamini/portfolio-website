@@ -53,8 +53,8 @@ const data = [
     project_info_text: ['Back End Dev', '2015'],
     project_description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
-    live_version: '',
-    source: '',
+    live_version: 'https://kdlamini.github.io/portfolio-website/',
+    source_code: 'https://github.com/KDlamini/portfolio-website',
   },
   {
     project_img: './images/Project-2.svg',
@@ -64,8 +64,8 @@ const data = [
     project_info_text: ['Back End Dev', '2015'],
     project_description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
-    live_version: '',
-    source: '',
+    live_version: 'https://kdlamini.github.io/portfolio-website/',
+    source_code: 'https://github.com/KDlamini/portfolio-website',
   },
   {
     project_img: './images/Project-3.svg',
@@ -75,8 +75,8 @@ const data = [
     project_info_text: ['Back End Dev', '2015'],
     project_description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
-    live_version: '',
-    source: '',
+    live_version: 'https://kdlamini.github.io/portfolio-website/',
+    source_code: 'https://github.com/KDlamini/portfolio-website',
   },
   {
     project_img: './images/Project-4.svg',
@@ -86,8 +86,8 @@ const data = [
     project_info_text: ['Back End Dev', '2015'],
     project_description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     tags: ['html', 'css', 'javascript'],
-    live_version: '',
-    source: '',
+    live_version: 'https://kdlamini.github.io/portfolio-website/',
+    source_code: 'https://github.com/KDlamini/portfolio-website',
   },
 ];
 
