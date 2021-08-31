@@ -422,7 +422,7 @@ button:hover {
 
 /* Project Detail Modal Section */
 .modal-container {
-  display: flex;
+  display: none;
   justify-content: space-around;
   position: fixed;
   top: 0;
@@ -431,6 +431,7 @@ button:hover {
   max-height: 100vh;
   background: #c1c7d0;
   z-index: 1;
+  animation: slide-in 0.8s ease-in-out both;
 }
 
 .works-modal {
@@ -744,7 +745,6 @@ button:hover {
     background-image: url(./images/header-background-shape-desktop.svg);
     background-repeat: no-repeat;
     background-position: top left;
-    overflow: hidden;
   }
 
   .menu {

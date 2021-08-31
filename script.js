@@ -43,4 +43,18 @@ window.addEventListener('resize', () => {
   }
 });
 
-//Desktop and Mobile pop-up
+// Desktop and Mobile pop-up
+const seeProjectBtn = document.querySelector('.see-project');
+const closeModalBtn = document.querySelector('.modal-close-button');
+const modal = document.querySelector('.modal-container');
+const body = document.querySelector('body');
+
+seeProjectBtn.addEventListener('click', () => {
+  modal.style.display = 'flex';
+  body.style.overflow = 'hidden';
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+  body.style.overflow = 'auto';
+});
