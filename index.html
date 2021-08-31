@@ -19,28 +19,28 @@
 </head>
 <body>
     <header class="toolbar">
-        <a href="#" class="logo-wrapper">
-            <p>Simo</p>
-        </a>
-
         <nav class="menu">
+            <a href="#" class="logo-wrapper">
+                <p>Simo</p>
+            </a>
+
+            <!-- Mobile Version Menu -->
+            <button class="menu-btn" type="button">
+                <img class="menu-icon" src="./images/Union.png" alt="">
+            </button>
+
             <!-- Desktop Version Menu --> 
             <ul class="menu-items">
                 <li class="menu-item portfolio">
-                    <p>Portfolio</p>
+                    <a href="#portfolio">Portfolio</a>
                 </li>
                 <li class="menu-item about">
-                    <p>About</p>
+                    <a href="#about">About</a>
                 </li>
                 <li class="menu-item contact">
-                    <p>Contact</p>
+                    <a href="#contact">Contact</a>
                 </li>
             </ul>
-
-            <!-- Mobile Version Menu -->
-            <button class="menu-btn active" type="button">
-                <img class="menu-icon" src="./images/Union.png" alt="">
-            </button>
         </nav>
     </header>
 
@@ -69,7 +69,7 @@
             </div>
         </section>
 
-        <Section class="works">
+        <Section class="works" id="portfolio">
             <!--Project 1-->
             <ul class="project-card">
                 <li class="project-img-wrapper">
@@ -200,7 +200,7 @@
         </Section>
 
         <!-- About section -->
-        <section class="about-section">
+        <section class="about-section" id="about">
             <div class="about-wrapper">
                 <div class="top-container">
                     <h2>About <br>
@@ -263,7 +263,7 @@
         </section>
 
         <!-- Contact section -->
-        <footer class="contact-section">
+        <footer class="contact-section" id="contact">
             <form class="contact-form" action="https://formspree.io/f/xjvjprwk" method="post">
                 <div class="form-group-text">
                     <h2 class="form-title">Contact me</h2>
@@ -284,5 +284,6 @@
             </form>
         </footer>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
