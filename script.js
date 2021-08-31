@@ -42,3 +42,5 @@ window.addEventListener('resize', () => {
     window.location.reload();
   }
 });
+
+//Desktop and Mobile pop-up
