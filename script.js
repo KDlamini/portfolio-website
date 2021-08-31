@@ -31,13 +31,14 @@ menuButton.addEventListener('click', () => {
 menuItems.forEach((item) => {
   item.addEventListener('click', () => {
     toggleMenu();
+    menuList.classList.remove('active');
     filterStyle();
     menuIcon.src = './images/Union.png';
   });
 });
 
 window.addEventListener('resize', () => {
-  if (contentBody.clientWidth >= 992 && menuList.classList.contains('active')) {
+  if (contentBody.clientWidth >= 992 && menuButton.classList.contains('active')) {
     window.location.reload();
   }
 });
