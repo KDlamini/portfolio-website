@@ -235,6 +235,18 @@ body {
 button:hover {
   color: #fff;
   background: #6070ff;
+  animation: scale-up2 0.8s ease both;
+  cursor: pointer;
+}
+
+@keyframes scale-up2 {
+  0% {
+    transform: scale(0.9);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 button:active {
@@ -275,22 +287,6 @@ button:disabled {
 .project-img-wrapper {
   width: 100%;
   height: 220px;
-}
-
-.project-img-wrapper:hover,
-button:hover {
-  animation: scale-up2 0.8s ease both;
-  cursor: pointer;
-}
-
-@keyframes scale-up2 {
-  0% {
-    transform: scale(0.9);
-  }
-
-  100% {
-    transform: scale(1);
-  }
 }
 
 .Project-img {
