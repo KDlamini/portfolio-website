@@ -93,6 +93,7 @@ const data = [
 
 // Populate Project Card using an array of project data objects
 const portfolio = document.querySelector('.works');
+portfolio.removeChild(portfolio.firstElementChild);
 
 data.forEach((project) => {
   const ul = document.createElement('ul');
@@ -204,6 +205,14 @@ seeProjectBtn.forEach((button, index) => {
     modalTags.forEach((tag, idx) => {
       tag.innerHTML = modalData.tags[idx];
     });
+
+    // Handle modal buttons
+    document.querySelector('.works-modal .see-live').onclick = () => {
+      window.location.href = modalData.live_version;
+    };
+    document.querySelector('.works-modal .see-source').onclick = () => {
+      window.location.href = modalData.source_code;
+    };
   });
 });
 
