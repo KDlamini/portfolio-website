@@ -703,6 +703,22 @@ button:disabled {
   outline: none;
 }
 
+.form-group-actions #email::placeholder {
+  color: #172b4d;
+  font-size: 17px;
+}
+
+#email:valid,
+#name:valid {
+  border: 2px solid #00c000;
+}
+
+.error-message {
+  width: 327px;
+  font-size: 15px;
+  color: #172b4d;
+}
+
 .textarea-container {
   width: 327px;
   height: 170px;

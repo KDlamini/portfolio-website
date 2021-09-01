@@ -221,3 +221,21 @@ closeModalBtn.addEventListener('click', () => {
   modal.style.display = 'none';
   body.style.overflow = 'auto';
 });
+
+// Handle Form Validation
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const error = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  const messages = [];
+
+  if (email.value !== email.value.toLowerCase()) {
+    messages.push('* Please enter a valid email address.');
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault();
+    error.innerHTML = messages.join('');
+  }
+});
