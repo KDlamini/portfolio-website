@@ -711,12 +711,13 @@ button:disabled {
 #email:valid,
 #name:valid {
   border: 2px solid #00c000;
+  border-radius: 3px;
 }
 
 .error-message {
   width: 327px;
   font-size: 15px;
-  color: #172b4d;
+  color: #fff;
 }
 
 .textarea-container {

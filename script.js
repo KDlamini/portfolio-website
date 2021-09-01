@@ -238,5 +238,7 @@ form.addEventListener('submit', (e) => {
   if (messages.length > 0) {
     e.preventDefault();
     error.innerHTML = messages.join('<br/>');
+    email.style.border = '2px solid #df0000';
+    email.style.borderRadius = '3px';
   }
 });
