@@ -175,13 +175,39 @@ const closeModalBtn = document.querySelector('.modal-close-button');
 const modal = document.querySelector('.modal-container');
 const body = document.querySelector('body');
 
-seeProjectBtn.forEach((button) => {
+// Handle see project button click
+seeProjectBtn.forEach((button, index) => {
   button.addEventListener('click', () => {
     modal.style.display = 'flex';
     body.style.overflow = 'hidden';
+
+    // Populate Pop-up Modal
+    const modalData = data[index];
+    const modalTags = Array.from(document.querySelectorAll('.works-modal .tag-item'));
+    const modalCounterImg = Array.from(document.querySelectorAll('.works-modal .project-info img'));
+    const infoItems = Array.from(document.querySelectorAll('.works-modal .project-info-item'));
+
+    document.querySelector('.works-modal .project-title').innerHTML = modalData.project_title;
+    document.querySelector('.works-modal .project-info-title').innerHTML = modalData.project_info_title;
+    document.querySelector('.works-modal .Project-img').src = modalData.project_img;
+    document.querySelector('.works-modal .project-description').innerHTML = modalData.project_description;
+    document.querySelector('.works-modal .see-live').href = modalData.live_version;
+    document.querySelector('.works-modal .see-source').href = modalData.source_code;
+
+    modalCounterImg.forEach((infoImg) => {
+      infoImg.src = modalData.counter_image;
+      infoImg.alt = modalData.project_title;
+    });
+    infoItems.forEach((infoItem, idx) => {
+      infoItem.innerHTML = modalData.project_info_text[idx];
+    });
+    modalTags.forEach((tag, idx) => {
+      tag.innerHTML = modalData.tags[idx];
+    });
   });
 });
 
+// Handle modal close button click
 closeModalBtn.addEventListener('click', () => {
   modal.style.display = 'none';
   body.style.overflow = 'auto';
