@@ -232,10 +232,11 @@ form.addEventListener('submit', (e) => {
 
   if (email.value !== email.value.toLowerCase()) {
     messages.push('* Please enter a valid email address.');
+    messages.push('* Email address must be in lowercase.');
   }
 
   if (messages.length > 0) {
     e.preventDefault();
-    error.innerHTML = messages.join('');
+    error.innerHTML = messages.join('<br/>');
   }
 });
