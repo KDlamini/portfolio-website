@@ -268,7 +268,7 @@ message.addEventListener('change', () => {
 });
 
 window.onload = () => {
-  if(localStorage.getItem("form_data") !== null) {
+  if (localStorage.getItem('form_data') !== null) {
     formData = JSON.parse(localStorage.getItem('form_data'));
     userName.value = formData.name;
     email.value = formData.email;
