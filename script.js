@@ -254,21 +254,21 @@ const saveToLocalStorage = () => {
 };
 
 userName.addEventListener('change', () => {
-  formData["name"] = userName.value;
+  formData.name = userName.value;
   saveToLocalStorage();
 });
 email.addEventListener('change', () => {
-  formData["email"] = email.value;
+  formData.email = email.value;
   saveToLocalStorage();
 });
 message.addEventListener('change', () => {
-  formData["message"] = message.value;
+  formData.message = message.value;
   saveToLocalStorage();
 });
 
 window.onload = () => {
   formData = JSON.parse(localStorage.getItem('form_data'));
-  userName.value = formData["name"];
-  email.value = formData["email"];
-  message.value = formData["message"];
+  userName.value = formData.name;
+  email.value = formData.email;
+  message.value = formData.message;
 };
