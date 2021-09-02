@@ -247,7 +247,7 @@ form.addEventListener('submit', (e) => {
 });
 
 // Store form data in localStorage
-let formData = { "name": "", "email": "", "message": ""};
+let formData = { name: '', email: '', message: '' };
 
 const saveToLocalStorage = () => {
   localStorage.setItem('form_data', JSON.stringify(formData));
