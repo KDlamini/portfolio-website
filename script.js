@@ -222,11 +222,14 @@ closeModalBtn.addEventListener('click', () => {
   body.style.overflow = 'auto';
 });
 
-// Handle Form Validation
+// Handle Form Validation and Localstorage
 const form = document.querySelector('.contact-form');
 const email = document.getElementById('email');
+const userName = document.getElementById('name');
+const message = document.getElementById('message');
 const error = document.querySelector('.error-message');
 
+// Form validation on submit
 form.addEventListener('submit', (e) => {
   const messages = [];
 
@@ -242,3 +245,30 @@ form.addEventListener('submit', (e) => {
     email.style.borderRadius = '3px';
   }
 });
+
+// Store form data in localStorage
+let formData = { "name": "", "email": "", "message": ""};
+
+const saveToLocalStorage = () => {
+  localStorage.setItem('form_data', JSON.stringify(formData));
+};
+
+userName.addEventListener('change', () => {
+  formData["name"] = userName.value;
+  saveToLocalStorage();
+});
+email.addEventListener('change', () => {
+  formData["email"] = email.value;
+  saveToLocalStorage();
+});
+message.addEventListener('change', () => {
+  formData["message"] = message.value;
+  saveToLocalStorage();
+});
+
+window.onload = () => {
+  formData = JSON.parse(localStorage.getItem('form_data'));
+  userName.value = formData["name"];
+  email.value = formData["email"];
+  message.value = formData["message"];
+};
