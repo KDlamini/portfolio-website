@@ -268,8 +268,10 @@ message.addEventListener('change', () => {
 });
 
 window.onload = () => {
-  formData = JSON.parse(localStorage.getItem('form_data'));
-  userName.value = formData.name;
-  email.value = formData.email;
-  message.value = formData.message;
+  if(localStorage.getItem("form_data") !== null) {
+    formData = JSON.parse(localStorage.getItem('form_data'));
+    userName.value = formData.name;
+    email.value = formData.email;
+    message.value = formData.message;
+  }
 };
