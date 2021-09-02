@@ -221,3 +221,24 @@ closeModalBtn.addEventListener('click', () => {
   modal.style.display = 'none';
   body.style.overflow = 'auto';
 });
+
+// Handle Form Validation
+const form = document.querySelector('.contact-form');
+const email = document.getElementById('email');
+const error = document.querySelector('.error-message');
+
+form.addEventListener('submit', (e) => {
+  const messages = [];
+
+  if (email.value !== email.value.toLowerCase()) {
+    messages.push('* Please enter a valid email address.');
+    messages.push('* Email address must be in lowercase.');
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault();
+    error.innerHTML = messages.join('<br/>');
+    email.style.border = '2px solid #df0000';
+    email.style.borderRadius = '3px';
+  }
+});
