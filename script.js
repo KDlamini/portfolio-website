@@ -47,15 +47,15 @@ window.addEventListener('resize', () => {
 // Project Card Data
 const data = [
   {
-    project_img: './images/Project-1.svg',
-    project_title: 'Tonic',
-    project_info_title: 'CANOPY',
+    project_img: './images/Screenshot-Homepage.png',
+    project_title: 'Marvel Movies',
+    project_info_title: 'MovieCon',
     counter_image: './images/Counter.svg',
-    project_info_text: ['Back End Dev', '2015'],
-    project_description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    project_info_text: ['Front End', '2021'],
+    project_description: 'Marvel Studios MovieCon conference website where the studio\'s president discusses with fans new feature films for theatres and series to release on Disney+.',
     tags: ['html', 'css', 'javascript'],
-    live_version: 'https://kdlamini.github.io/portfolio-website/',
-    source_code: 'https://github.com/KDlamini/portfolio-website',
+    live_version: 'https://kdlamini.github.io/marvel-moviecon-capstone1/',
+    source_code: 'https://github.com/KDlamini/marvel-moviecon-capstone1',
   },
   {
     project_img: './images/Project-2.svg',
